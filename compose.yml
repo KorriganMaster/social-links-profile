@@ -1,0 +1,11 @@
+services:
+  node:
+    container_name: social-links-profile-node
+    image: node
+    volumes:
+      - ./:/var/www
+    ports:
+      - 3000:3000
+    working_dir: /var/www
+    command: yarn dev --port 3000 --host
+    

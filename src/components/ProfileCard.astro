@@ -1,0 +1,30 @@
+---
+import type { Profile } from "@data/types";
+import { Image } from "astro:assets";
+import SocialNetwork from "./SocialNetwork.astro";
+
+type Props = {
+    profile: Profile
+}
+
+const { profile } = Astro.props;
+---
+<div class="bg-grey-800 flex flex-col items-center gap-6 text-white px-7 pb-7 pt-10 w-full sm:rounded-lg sm:w-[340px]">
+    <Image class="rounded-full" src={profile.avatar} width={85} height={85} alt={`${profile.firstname} ${profile.lastname} avatar`} loading="eager" />
+    
+    <!-- Metadata -->
+    <div class="text-center flex flex-col gap-2">
+        <h1 class="text-2xl font-bold">{profile.firstname} {profile.lastname}</h1>
+        <span class="font-semibold text-green-500">{profile.city}, {profile.country}</span>
+    </div>
+    
+    <!-- Description -->
+    <span class="quoted">{profile.description}</span>
+    
+    <!-- Social networks links -->
+    <div class="flex flex-col gap-3 text-center w-full">
+        {profile.socialNetworks.map((socialNetwork) => (
+            <SocialNetwork socialNetwork={socialNetwork} />
+        ))}
+    </div>
+</div>

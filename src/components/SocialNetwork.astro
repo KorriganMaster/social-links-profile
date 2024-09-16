@@ -1,0 +1,16 @@
+---
+import type { SocialNetwork } from '@data/types';
+
+type Props = {
+    socialNetwork: SocialNetwork
+}
+
+const { socialNetwork } = Astro.props;
+---
+<a 
+    class="bg-grey-700 p-2 rounded-md font-semibold hover:bg-green-500 hover:text-grey-800" 
+    href={socialNetwork.url}
+    target="_blank"
+>
+    {socialNetwork.name}
+</a>
