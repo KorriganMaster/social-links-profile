@@ -4,8 +4,8 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				green: {
-					500: 'hsl(75, 94%, 57%)',
+				secondary: {
+					100: 'hsl(75, 94%, 57%)',
 				},
 				grey: {
 					700: 'hsl(0, 0%, 20%)',
