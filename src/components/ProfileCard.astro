@@ -9,7 +9,7 @@ type Props = {
 
 const { profile } = Astro.props;
 ---
-<div class="bg-grey-800 flex flex-col items-center gap-6 text-white px-7 pb-7 pt-10 w-full sm:rounded-lg sm:w-[340px]">
+<div role="main" class="bg-grey-800 flex flex-col items-center gap-6 text-white px-7 pb-7 pt-10 w-full sm:rounded-lg sm:w-[340px]">
     <Image class="rounded-full" src={profile.avatar} width={85} height={85} alt={`${profile.firstname} ${profile.lastname} avatar`} loading="eager" />
     
     <!-- Metadata -->
