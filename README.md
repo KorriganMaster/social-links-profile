@@ -1,6 +1,6 @@
 # Frontend Mentor - Social links profile solution
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/58c97310-e614-4d7d-96ef-4dd9e40c398e/deploy-status)](https://app.netlify.com/sites/fem-social-links-profile/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58c97310-e614-4d7d-96ef-4dd9e40c398e/deploy-status)](https://app.netlify.com/sites/fem-social-links-profile/deploys) [![Node.js CI](https://github.com/KorriganMaster/social-links-profile/actions/workflows/node.js.yml/badge.svg)](https://github.com/KorriganMaster/social-links-profile/actions/workflows/node.js.yml)
 
 This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
